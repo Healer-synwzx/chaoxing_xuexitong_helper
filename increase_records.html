@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+	<h3 id="title">current url: https://www.baidu.com</h3>
+    <iframe id="unipus" src="https://www.baidu.com" style="width: 90%; height: 600px; margin: auto; display: block;"></iframe>
+    <script type="text/javascript" src="unipus_auto_time.js"></script>
+</body>
+<script type="text/javascript">
+	let url="https://mooc1-1.chaoxing.com/mycourse/studentcourse?courseId=&clazzid=&ut=s&enc=&cpi=&openc=";
+	setInterval(function (argument) {
+		unipus.src=url;
+		title.innerText=url;
+	}, 60*60*1000);
+	unipus.src=url;
+</script>
+</html>
